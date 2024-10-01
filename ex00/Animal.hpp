@@ -10,7 +10,6 @@ class Animal
     	std::string type;
 
 	public:
-    // Constructors
     	Animal();
     	Animal(const Animal &other);
 		~Animal();

@@ -5,10 +5,10 @@
 
 class Dog : public Animal
 {
-public:
-    Dog();
-    ~Dog();
-    void makeSound() const override;
+	public:
+		Dog();
+		~Dog();
+		void makeSound() const override;
 };
 
 #endif

@@ -6,9 +6,9 @@
 class Cat : public Animal
 {
 	public:
-    Cat();
-    ~Cat();
-    void makeSound() const override;
+		Cat();
+		~Cat();
+		void makeSound() const override;
 };
 
 #endif
