@@ -2,25 +2,25 @@
 
 Animal::Animal() : type("Animal")
 {
-    std::cout << "Animal constructed" << std::endl;
+    std::cout << "Animal constructor" << std::endl;
 }
 
 Animal::Animal(const Animal &other) : type(other.type)
 {
-    std::cout << "Animal copied" << std::endl;
+    std::cout << "Animal copy constructor" << std::endl;
 }
 
 Animal::~Animal()
 {
-    std::cout << "Animal destructed" << std::endl;
+    std::cout << "Animal destructor" << std::endl;
 }
 
 void Animal::makeSound() const
 {
-    std::cout << "Some generic animal sound!" << std::endl;
+    std::cout << "Bara bara bara, bere bere bere." << std::endl;
 }
 
 std::string Animal::getType() const
 {
     return type;
-}
+};
