@@ -1,5 +1,5 @@
 NAME = Fire
-SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp
+SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp Brain.cpp
 OBJS = $(SRCS:.cpp=.o)
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 CC = c++

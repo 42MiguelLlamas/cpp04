@@ -20,6 +20,7 @@ int main()
 		i++;
 	}
 	i = 0;
+	//static_cast<WrongCat*>(meta[4])->printIdeas();
 	while (i < 6)
 	{
 		delete(meta[i]);

@@ -15,6 +15,7 @@ class WrongCat : public Animal
 		WrongCat& operator=(WrongCat const& other);
 		~WrongCat();
 		void makeSound() const;
+		void printIdeas();
 };
 
 #endif

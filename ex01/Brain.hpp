@@ -6,14 +6,13 @@
 
 class Brain
 {
-	protected:
-    	std::string ideas[100];
-
 	public:
+		std::string ideas[100];
     	Brain();
     	Brain(const Brain &other);
 		Brain& operator=(Brain const& other);
 		~Brain();
+		void print();
 };
 
 #endif

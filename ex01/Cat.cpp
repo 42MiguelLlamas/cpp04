@@ -3,8 +3,8 @@
 Cat::Cat()
 {
     type = "Cat";
-    brain = new Brain();
     std::cout << "Cat constructor" << std::endl;
+    brain = new Brain();
 }
 
 Cat::Cat (Cat const& a)
@@ -19,11 +19,13 @@ Cat& Cat::operator=(Cat const& other)
     if (this == &other)
         return *this;
     this->type = other.type;
+    this->brain = other.brain;
     return *this;
 };
 
 Cat::~Cat()
 {
+    delete brain;
     std::cout << "Cat destructor" << std::endl;
 }
 
