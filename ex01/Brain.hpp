@@ -12,6 +12,7 @@ class Brain
 	public:
     	Brain();
     	Brain(const Brain &other);
+		Brain& operator=(Brain const& other);
 		~Brain();
 };
 
