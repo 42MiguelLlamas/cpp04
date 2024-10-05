@@ -1,14 +1,14 @@
 #include "Dog.hpp"
 #include "Cat.hpp"
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "WrongCat.hpp"
 
 int main()
 {
-	Animal **meta = new Animal*[6];
-	const Animal *a = new Animal();
 	int i = 0;
-	a->makeSound();
+	AAnimal **meta = new AAnimal*[6];
+	//const AAnimal *a = new AAnimal(); //falla si es abstracta la clase
+	//a->makeSound();
 	meta[0] = new Dog();
 	meta[1] = new Dog();
 	meta[2] = new Dog();
@@ -28,6 +28,5 @@ int main()
 		i++;
 	}
 	delete[] meta;
-	delete a;
 	return 0;
 }
