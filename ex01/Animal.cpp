@@ -10,6 +10,14 @@ Animal::Animal(const Animal &other) : type(other.type)
     std::cout << "Animal copy constructor" << std::endl;
 }
 
+Animal& Animal::operator=(Animal const& other) 
+{
+    if (this == &other)
+        return *this;
+    this->type = other.type;
+    return *this;
+};
+
 Animal::~Animal()
 {
     std::cout << "Animal destructor" << std::endl;

@@ -12,9 +12,7 @@ class Brain
 	public:
     	Brain();
     	Brain(const Brain &other);
-		virtual ~Brain();
-    	virtual void makeSound() const;
-    	virtual std::string getType() const;
+		~Brain();
 };
 
 #endif

@@ -3,12 +3,26 @@
 WrongCat::WrongCat()
 {
     type = "Cat";
-    std::cout << "Cat constructor" << std::endl;
+    std::cout << "Wrong Cat constructor" << std::endl;
 }
+
+WrongCat::WrongCat (WrongCat const& a)
+{
+    std::cout << "Wrong Copy constructor called" << std::endl;
+    this->type = a.type;
+};
+
+WrongCat& WrongCat::operator=(WrongCat const& other) 
+{
+    if (this == &other)
+        return *this;
+    this->type = other.type;
+    return *this;
+};
 
 WrongCat::~WrongCat()
 {
-    std::cout << "Cat destructor" << std::endl;
+    std::cout << "Wrong Cat destructor" << std::endl;
 }
 
 void WrongCat::makeSound() const

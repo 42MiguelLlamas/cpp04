@@ -1,4 +1,4 @@
-NAME = Animal
+NAME = Fire
 SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongCat.cpp
 OBJS = $(SRCS:.cpp=.o)
 CFLAGS = -Wall -Werror -Wextra -std=c++98
